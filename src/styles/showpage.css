@@ -1,0 +1,61 @@
+.season-episodes{
+    background: white;
+    transition: background 0.4s ease-in;
+    display: flex;
+      padding: 4rem 0rem 2rem 4rem;
+      gap: "2rem";
+}
+.season-episodes:hover{
+    background-color: darkgrey;
+
+}
+.option{
+    filter: brightness(0.3);
+}
+.option::after{
+    content: '';
+    width: 3px;
+    height: 3px;
+    background: white;
+    display: block;
+    transition: width 0.4s ease-in;
+}
+.selected {
+    filter: brightness(1);
+  }
+  .selected::after{
+    content: '';
+    margin-top: 4px;
+    width: 40px;
+    height: 3px;
+    background: white;
+    display: block;
+  }
+  
+  .dim {
+    filter: brightness(0.5);
+  }
+  .epi-img{
+    height: 250px;
+    width: 350px;
+    border-radius: 5px;
+  }
+  .epi-content{
+    margin-left: 2rem;
+  }
+  @media screen and (max-width:768px) {
+    .season-episodes{
+      display: block;
+      padding: 4rem 0rem 2rem 4rem;
+      gap: "2rem";
+
+    }
+    .epi-img{
+      width: 250px;
+      height: 220px;
+    }
+    .epi-content{
+      margin-top: 2rem;
+      max-width: 250px;
+    }
+  }
